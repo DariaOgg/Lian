@@ -12,12 +12,12 @@ a {
     text-decoration: none;
 }
 
-body{
+body {
     height: 100%;
     color: black;
 }
 
-header{
+header {
     padding-top: 27px;
     padding-bottom: 28px;
     position: relative;
@@ -26,35 +26,37 @@ header{
     box-shadow: 0 3px 3px 0 #bbbfbe;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
 }
-.container:after{
+
+.container:after {
     display: block;
     content: "";
     clear: both;
 
 }
 
-header  .logo{
+header .logo {
     float: left;
 }
 
-header nav{
+header nav {
     float: right;
 }
 
-header nav ul:after{
+header nav ul:after {
     display: block;
     content: "";
     clear: both;
 }
-header nav ul{
+
+header nav ul {
     list-style: none;
 }
 
-header nav ul li{
+header nav ul li {
     float: right;
     margin-left: 48px;
     position: relative;
@@ -71,14 +73,14 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header nav ul li i{
+header nav ul li i {
     margin-top: 10px;
     cursor: pointer;
     color: #777;
     font-size: 15px;
 }
 
-header nav ul li a:before{
+header nav ul li a:before {
     content: "";
     width: 20px;
     height: 1px;
@@ -89,11 +91,12 @@ header nav ul li a:before{
     opacity: 0;
 }
 
-header nav ul li:hover a:before{
+header nav ul li:hover a:before {
     opacity: 1;
     transition: 0.5s;
 }
-header nav ul li:hover a{
+
+header nav ul li:hover a {
     transition: 0.3s;
     color: black;
 }
@@ -130,4 +133,143 @@ section .item_text h3 {
     font-size: 18px;
     font-family: 'roboto', sans-serif;
     font-weight: 300;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    border-radius: 14px;
+    background-color: white;
+    display: inline-block;
+    margin: 0 8px;
+    border: solid 4px white;
+
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+    border: solid 4px black;
+
+}
+
+
+.owl-carousel .owl-dots {
+    text-align: center;
+    bottom: 56px;
+    width: 100%;
+    position: absolute;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    background-color: transparent;
+    outline: none;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 48%;
+    left: 111px;
+    border-radius: 20px;
+    border: solid 1px white ! important;
+    height: 40px;
+    width: 40px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 48%;
+    right: 111px;
+    border-radius: 20px;
+    border: solid 1px white ! important;
+    height: 40px;
+    width: 40px;
+}
+
+
+.owl-carousel .owl-nav .owl-prev:before {
+    content: '<';
+    color: #FFFFFF;
+}
+
+.owl-carousel .owl-nav .owl-next:before {
+    content: '>';
+    color: #FFFFFF;
+}
+
+.owl-carousel .owl-nav button:active{
+    background-color: black;
+    border: none !important;
+
+}
+
+
+.ui-tabs .ui-tabs-nav {
+    margin: 32px 0 0 0;
+    padding: 0;
+}
+
+.ui-widget-header {
+    border: none;
+    background: none;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    text-align: center;
+    float: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-widget {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    float: none;
+    top: 0;
+    margin: 0;
+    padding: 25px 24px;
+    display: inline-block;
+    font-weight: 700;
+    outline: none;
+
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #777777;
+}
+
+.ui-widget-header {
+    text-align: center;
+    border-top: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+    background: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: transparent;
+    font-weight: normal;
+}
+
+.ui-tabs .ui-tabs-nav li :before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 15px;
+    right: 0;
+    height: 34px;
+    border-right: 1px #e1e1e1 solid;
+    transform: skewX(-20grad);
+}
+
+.ui-tabs .ui-tabs-nav li :before :last-child {
+    border-right: none;
 }
