@@ -196,7 +196,7 @@ section .item_text h3 {
     color: #FFFFFF;
 }
 
-.owl-carousel .owl-nav button:active{
+.owl-carousel .owl-nav button:active {
     background-color: black;
     border: none !important;
 
@@ -218,6 +218,10 @@ section .item_text h3 {
     float: none;
     padding: 0;
     text-decoration: none;
+    color: #777777;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor:active {
+    color: black;
 }
 
 
@@ -227,23 +231,27 @@ section .item_text h3 {
 
 .ui-widget {
     font-family: 'Roboto', sans-serif;
+}
+
+
+.ui-tabs .ui-tabs-nav li {
+    float: none;
+    text-align: center;
+    top: 0;
+    margin: 0;
+    padding: 25px 20px;
+    display: inline-block;
+    font-weight: 700;
+    outline: none;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.ui-tabs .ui-tabs-nav li {
-    float: none;
-    top: 0;
-    margin: 0;
-    padding: 25px 24px;
-    display: inline-block;
-    font-weight: 700;
-    outline: none;
 
-}
-
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
-    color: #777777;
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: transparent;
+    font-weight: normal;
 }
 
 .ui-widget-header {
@@ -253,13 +261,8 @@ section .item_text h3 {
     background: none;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    border: none;
-    background: transparent;
-    font-weight: normal;
-}
 
-.ui-tabs .ui-tabs-nav li :before {
+.ui-tabs .ui-tabs-nav li :after {
     position: absolute;
     content: "";
     left: 0;
@@ -270,6 +273,14 @@ section .item_text h3 {
     transform: skewX(-20grad);
 }
 
-.ui-tabs .ui-tabs-nav li :before :last-child {
-    border-right: none;
+/*.ui-tabs .ui-tabs-nav li:after {*/
+/*    content: '/';*/
+/*    margin-left: 22px;*/
+/*    font-size:30px;*/
+/*    font-weight: initial;*/
+/*    color: #e1e1e1;*/
+/*}*/
+
+.ui-tabs .ui-tabs-nav li :after:last-child {
+    display: none;
 }
