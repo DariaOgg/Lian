@@ -9,10 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
 
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
@@ -30,12 +28,43 @@
         $(function () {
             $("#tabs").tabs();
         });
+
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $("#opener").on("click", function () {
+                $("#dialog").dialog("open");
+            });
+        });
     </script>
 
     <script src="js/js.js"></script>
 
 </head>
 <body>
+<div id="dialog" title="FORGOT YOUR PASSWORD?">
+    <form action="" method="post">
+        <label>ENTER YOUR<br>
+            EMAIL</label>
+        <input>
+        <button>
+            RESET PASSWORD
+        </button>
+        <p>or</p>
+        <a href="faq.html" class="facebook"><i class="fab fa-facebook-f"></i>Log In Using Facebook</a>
+    </form>
+</div>
+
 <header>
     <div class="container">
         <a href="#" class="logo">
@@ -45,9 +74,6 @@
             <ul>
                 <li>
                     <i class="fas fa-search"></i>
-                </li>
-                <li>
-                    <a href="#">HOME</a>
                 </li>
                 <li>
                     <a href="#">About</a>
@@ -61,6 +87,12 @@
                 <li>
                     <a href="#">Contact</a>
                 </li>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li id="opener">
+                    <a href="#">Login</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -70,42 +102,34 @@
         <div>
             <div class="item_text">
                 <h2>
-                    Lian Creative Agency
-                </h2>
+                    Lian Creative Agency</h2>
                 <h3>
-                    Minimal Freelance Portfolio
-                </h3>
+                    Minimal Freelance Portfolio</h3>
             </div>
             <div class="item_text">
                 <h2>
-                    Lian Creative Agency
-                </h2>
+                    Lian Creative Agency</h2>
                 <h3>
-                    Minimal Freelance Portfolio
-                </h3>
+                    Minimal Freelance Portfolio</h3>
             </div>
-            <img src="images/carousel_img.png" alt="paint; width: 100%">
+            <img src="images/shutterstock_353200073.png" alt="paint; width: 100%">
         </div>
         <div>
             <div class="item_text">
                 <h2>
-                    Lian Creative Agency
-                </h2>
+                    Lian Creative Agency</h2>
                 <h3>
-                    Minimal Freelance Portfolio
-                </h3>
+                    Minimal Freelance Portfolio</h3>
             </div>
-            <img src="images/carousel_img.png" alt="paint; width: 100%">
+            <img src="images/shutterstock_353200073.png" alt="paint; width: 100%">
         </div>
         <div>
-            <img src="images/carousel_img.png" alt="paint; width: 100%">
+            <img src="images/shutterstock_353200073.png" alt="paint; width: 100%">
             <div class="item_text">
                 <h2>
-                    Lian Creative Agency
-                </h2>
+                    Lian Creative Agency</h2>
                 <h3>
-                    Minimal Freelance Portfolio
-                </h3>
+                    Minimal Freelance Portfolio</h3>
             </div>
         </div>
 
