@@ -405,6 +405,10 @@ section .item_text h3 {
     color: #ffffff;
 }
 
+.ui-widget.ui-widget-content{
+    background-color: white;
+}
+
 .ui-dialog form .facebook {
     margin: 32px 0 166px 0;
     background-color: #4865a3;
@@ -428,10 +432,10 @@ section .item_text h3 {
     color: #860da6;
     line-height: 57px;
     background-color: #fce7f2;
+    outline: none;
 }
 
 .ui-icon, .ui-widget-content .ui-icon {
-    background-image: none;
     width: 4px;
     height: 4px;
     background: #860da6;
@@ -441,21 +445,39 @@ section .item_text h3 {
 
 
 .ui-widget-content {
-background-color: #fef5fa;
-border: none;
-font: 24px 'Poppins', sans-serif;
-font-weight: 300;
-color: #252525;
-line-height: 33px;
-height: content-box; !important;
+    background-color: #fef5fa;
+    border: none;
+    font: 24px 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #252525;
+    line-height: 33px;
 }
 
 .ui-accordion .ui-accordion-content {
-padding: 20px 32px;
-border-top: 0;
-overflow: auto;
+    padding: 20px 32px;
+    border-top: 0;
+    overflow: auto;
 }
+
 
 .ui-accordion-header.ui-state-active {
     background-color: #fef5fa;
+}
+
+
+.ui-accordion .ui-accordion-header:after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/arrow.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+}
+
+.ui-accordion-header.ui-state-active:after {
+    content: "";
+    transform: rotate( 100grad);
+    right: 30px;
 }
